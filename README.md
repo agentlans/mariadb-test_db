@@ -13,10 +13,16 @@ This repository contains a compressed SQL file (`all-dump.sql.zst`) that include
 mariadb -u root < all-dump.sql
 ```
 ## Purpose
-This database dump is intended to be used as sample data for testing and development purposes with MariaDB applications.
+This database dump is provided as sample data to help you test and develop your MariaDB applications. It contains a pre-populated dataset that you can use to experiment, prototype, or demonstrate features.
 
-Note: This repository does not include any Dockerfile or instructions on how to set up the MariaDB container. You will need to have a local MariaDB instance running in order to import and use this database dump.
+> [!IMPORTANT]  
+> This repository does not include the necessary Docker configuration files or instructions on how to set up MariaDB. You'll need to have a local MariaDB instance running on your machine in order to import this database dump.
+
+If you don't already have a working MariaDB installation, you can use this pre-built Docker image:
+
+* [MariaDB Sample Database Image](https://hub.docker.com/r/agentlans/mariadb-sample)
+
+This container is preloaded with the sample database data, making it easy to get started quickly. Simply pull and run the image to access the sample dataset for testing and development purposes.
 
 ## Licence
 Like the original database, this work is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License.
-
